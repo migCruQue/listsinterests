@@ -96,26 +96,22 @@ a:active {
   letter-spacing: 0.65em;
   font-weight: 200;
   border-bottom: 2px solid;
-  padding-bottom: 10px;
+  padding-bottom: 100px;
+  vertical-align: center;
 }
 
 
-.primary-content,
+.wrap,
 .main-header,
 .main-footer {
   text-align: center;
 }
 
-.primary-content {
+.wrap {
 	padding-top: 25px;
   padding-bottom: 95px;
 }
 
-.secondary-content {
-	padding-top: 80px;
-	padding-bottom: 70px;
-  border-bottom: 2px solid #dfe2e6;
-}
 
 
 .main-footer {
@@ -128,7 +124,7 @@ a:active {
 
 /* Layout Styles ------------------ */
 
-.primary-content {
+.wrap {
   width: 75%;
   padding-left: 50px;
   padding-right: 50px;
@@ -160,29 +156,14 @@ a:active {
 /* Media Queries -------------------- */
 
 
-@media (max-width: 1024px){
 
-  .primary-content,
-  .second-content {
-    width: 90%;
+@media (min-width: 768px){
 
-  }
 
-  .entry {
-    padding: 10% 12%;
-    margin: 59px 0 20px;
-  }
 
-}
-
-@media (max-width: 768px){
-
-  .primary-content {
-    width: 100%;
-    padding: 20px;
-    border: none;
-
-  }
+  .wrap {
+		min-height: calc(100vh - 120px);
+	}
 
   .main-header {
     max-height: 380px;
