@@ -40,7 +40,8 @@ h3 {
 }
 
 img {
-  max-width: 100%;
+  max-width: 300px;
+  max-height: 250px;
   margin-bottom: 20px;
   border-radius: 10px;
 }
@@ -48,15 +49,23 @@ img {
 ul,
 ol {
   margin: 30px 0;
-}
-
-ul:nth-of-type(odd){
-
-  background-color: red;
+  padding-left: 0;
 }
 
 li {
   margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 2px solid grey;
+}
+
+.last  {
+  border-style: none;
+
+}
+
+li p {
+    padding-left: 70px;
+
 }
 
 /* Pseudo-classes ------------------ */
@@ -90,15 +99,6 @@ a:active {
   background-size: cover;
 }
 
-.title {
-  color: white;
-  font-size: 1.625rem; /* 26px/16px */
-  letter-spacing: 0.65em;
-  font-weight: 200;
-  border-bottom: 2px solid;
-  padding-bottom: 100px;
-  vertical-align: center;
-}
 
 
 .wrap,
@@ -132,19 +132,6 @@ a:active {
   max-width: 960px;
 }
 
-.entry {
-  color: white;
-  text-align: left;
-  padding: 18% 24%;
-  border-top: 10px solid #ffa949;
-  margin: 105px 0 60px;
-  background: #434a52 url('../img/lost.jpeg') no-repeat center;
-  background-size: cover;
-  box-shadow: inset 0 0p 50px 10px rgba(0, 0, 0, 1);
-  border-radius: 10%;
-
-
-}
 
 
 
@@ -171,11 +158,6 @@ a:active {
 
   }
 
-  .title {
-
-    font-size: 1.3rem;
-    border-top: none;
-  }
 
   h1 {
     font-size: 5rem;
