@@ -58,14 +58,18 @@ li {
   border-bottom: 2px solid grey;
 }
 
-.last  {
-  border-style: none;
+li:last-child  {
+ border: none;  /* does not apply border to the last element of my list. */
 
 }
 
 li p {
     padding-left: 70px;
 
+}
+
+li:nth-child(odd){
+  background-color: red; 
 }
 
 /* Pseudo-classes ------------------ */
