@@ -72,14 +72,18 @@ h2 span {
     font-family: 'Amatic SC', cursive;
 }
 
-li:nth-child(odd){
+li:nth-of-type(odd){
   background: linear-gradient( transparent 10%, #b82e8a, transparent 90%);
+
 }
 
 
-li:nth-child(even){
+li:nth-of-type(even){
   background: linear-gradient( transparent 10%, #33ffbb, transparent 90%);
 }
+
+
+
 /* Pseudo-classes ------------------ */
 
 a:link {
