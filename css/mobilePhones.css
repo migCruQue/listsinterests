@@ -1,16 +1,52 @@
-
+/*
 
 
 .slide {
 
-max-height: 80vh;
+max-height: 100vh;
 
 }
 
-/* img {
 
-  display: block;
-vertical-align:middle;
+#startac {
+  object-position: top;
+  object-fit: scale-down;
+}
 
+#savvy{
+
+object-position: 50% 15%;
+object-fit:  scale-down;
+}
+
+#navigator {
+  object-position: top;
+  object-fit: scale-down;
+}
+
+#sonye {
+  object-position: top;
+  object-fit:  none;
+}
+
+#htc {
+  object-position: top;
+  object-fit:  none;
+}
+
+
+.top {
+
+object-position: top;
+}
+
+.scaleDown {
+
+  object-fit: scale-down;
+}
+
+.center {
+
+object-position: 50% 25%;
 
 } */
