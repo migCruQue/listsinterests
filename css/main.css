@@ -5,9 +5,14 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   color: #878787;
-  margin: 0;
+  margin-bottom: 60px; /* Margin bottom by footer height */
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -79,7 +84,7 @@ a:active {
 
 .main-header {
   padding-top: 170px;
-  height: 450px;
+  height: 20rem;
   background:
     linear-gradient(#6600cc, transparent 90%),
     linear-gradient(0deg, #fff, transparent),
@@ -89,23 +94,14 @@ a:active {
 
 
 
-.wrap,
-.main-header,
-.main-footer {
+.footer,
+.main-header
+ {
   text-align: center;
 }
 
-.wrap {
-	padding-top: 25px;
-  padding-bottom: 95px;
-}
 
 
-
-.main-footer {
-  background-color: grey;
-  color: white;
-}
 
 
 /* Layout Styles ------------------ */
@@ -113,15 +109,22 @@ a:active {
 
 .entry {
   color: white;
-  text-align: left;
-  padding: 18% 24%;
-  border-top: 5px solid #b3ffb3;
-  margin: 105px 0 60px;
-  background-size: cover;
+  /* text-align: left; */
+  /* background-size: cover; */
+  height: 20rem;
   box-shadow: inset 0 0p 50px 10px rgba(0, 0, 0, 1);
   border-radius: 10%;
 }
 
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: grey;
+  color: white;
+}
 
 #tv {
 
@@ -171,7 +174,7 @@ a:active {
 
 
 
-  .main-footer{
+  .footer{
     padding: 60px 0;
   }
 }
